@@ -1,0 +1,135 @@
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.ft-list{
+    gap: 10px;
+    padding: 0 !important;
+    display: flex;
+    justify-content: safe;
+}
+.ft-wrapper{
+    display: flex;
+    background-color: #263238;
+    color: white;
+    margin-top: 40px;
+    padding: 64px 100px;
+    /* gap: 10px; */
+}
+.left-ft{
+    position: relative;
+    align-items: safe;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 40%;
+}
+.right-ft{
+    gap: 30px;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: safe;
+}
+.left-ft :nth-child(1){
+    color: #4CAF4F;
+    background-color: transparent;
+    font-size: 25px;
+    font-weight: 600;
+}
+svg{
+    fill: white !important;
+}
+.r-3{
+    display: flex;
+    flex-direction: column;
+}
+.r-input{
+    width: 80%;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+.r-list{
+    margin-top: 10px;
+}
+.r-list>li{
+    padding-block: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: safe !important;
+    justify-content: safe !important;
+    text-align: start !important;
+}
+.r-input{
+    border: 1px solid white;
+    background-color: transparent;
+}
+@media screen and (max-width:900px){
+    .right-ft{
+        width: 60% !important;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:830px){
+    .ft-list{
+        gap: 40px;
+    }
+    .ft-wrapper{
+        padding: 64px 10px;
+    }
+    .left-ft{
+        width: 35%;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .right-ft{
+        align-items: center;
+        justify-content: end;
+        width: 65%;
+    }
+}
+@media screen and (max-width:669px){
+    .ft-wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    .left-ft{
+        align-items: center;
+        width: 100%;
+    }
+    .r-1,.r-2,.r-3{
+        width: 200px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .r-list>li{
+        margin-left: 30%;
+        align-items: start;
+    }
+    .right-ft{
+        width: 100% !important;
+        justify-content: space-evenly;
+    }
+}
+@media screen and (max-width:500px){
+    .right-ft{
+        flex-wrap: wrap;
+        text-align: start;
+        justify-content: space-evenly;
+    }
+    .r-1{
+        padding-top: 8px;
+    }
+   .r-3{
+    display: none;
+   }
+   .r-1,.r-2,.r-3{
+    width: 150px;
+   }
+}
